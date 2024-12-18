@@ -7,14 +7,14 @@ namespace ChatRoom.Controlers;
 
 public class AccountController : Controller
 {
-    public IActionResult Login(string? returnUrl = null)
+    public IActionResult Login4(string? returnUrl = null)
     {
         ViewBag.ReturnUrl = returnUrl;
         return View();
     }
 
     [HttpPost]
-    public async Task<IActionResult> Login(LoginViewModel user, string? returnurl = "/")
+    public async Task<IActionResult> Login2(LoginViewModel user, string? returnurl = "/")
     {
         if ((user.UserName == "sajad" || user.UserName == "sara") && user.Password == "sara136739")
         {
